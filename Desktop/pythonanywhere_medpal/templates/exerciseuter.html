@@ -1,0 +1,239 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>M E D P A L</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/css/exercise.css">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+
+</head>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">M E D P A L</a>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Diagnosis
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="diagheart.html">Heart</a></li>
+            <li><a class="dropdown-item" href="diagdiab.html">Diabetes</a></li>
+            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">Cancer</a>
+              <ul class="dropdown-menu">
+                <a class="dropdown-item" href="diagbreast.html">Breast Cancer</a>
+                <a class="dropdown-item" href="diaglung.html">Lung Cancer</a>
+                <!--<a class="dropdown-item" href="diagskin.html">Skin Cancer</a>
+                <a class="dropdown-item" href="diagbrain.html">Brain Tumor</a>-->
+              </ul>
+            </li>
+            <li><a class="dropdown-item" href="diagkidney.html">Kidney Disease</a></li>
+            <!--<li><a class="dropdown-item" href="diagpm.html">Pneumonia</a></li>
+            <li><a class="dropdown-item" href="diagal.html">Alzheimer’s</a></li>-->
+            <li><a class="dropdown-item" href="diagthy.html">Thyroid</a></li>
+            <!--<li><a class="dropdown-item" href="diagliv.html">Liver Disease</a></li>-->
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Diet
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="dietheart.html">Heart</a></li>
+            <li><a class="dropdown-item" href="dietdiab.html">Diabetes</a></li>
+            <li><a class="dropdown-item" href="dietbreast.html">Cancer</a></li>
+            <li><a class="dropdown-item" href="dietkidney.html">Kidney Disease</a></li>
+            <li><a class="dropdown-item" href="dietpn.html">Pneumonia</a></li>
+            <li><a class="dropdown-item" href="dietal.html">Alzheimer’s</a></li>
+            <li><a class="dropdown-item" href="dietthy.html">Thyroid</a></li>
+            <li><a class="dropdown-item" href="diethep.html">Hepatitis C</a></li>
+            <li><a class="dropdown-item" href="dietliver.html">Liver Disease</a></li>
+            <li><a class="dropdown-item" href="dietcholesterol.html">Cholesterol</a></li>
+            <li><a class="dropdown-item" href="dietbp.html">Blood Pressure</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Exercise
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="exercisehead.html">Migraine</a></li>
+            <li><a class="dropdown-item" href="exerciseuter.html">Uterus</a></li>
+            <li><a class="dropdown-item" href="exerciseheart.html">Heart</a></li>
+            <li><a class="dropdown-item" href="exercisediab.html">Diabetes</a></li>
+            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">Cancer</a>
+              <ul class="dropdown-menu">
+                <a class="dropdown-item" href="exercisebreast.html">Breast Cancer</a>
+                <a class="dropdown-item" href="exerciselung.html">Lung Cancer</a>
+                <a class="dropdown-item" href="exercisebrain.html">Brain Tumor</a>
+              </ul>
+            </li>
+            <li><a class="dropdown-item" href="exercisekidney.html">Kidney Disease</a></li>
+            <li><a class="dropdown-item" href="exercisepm.html">Pneumonia</a></li>
+            <li><a class="dropdown-item" href="exerciseal.html">Alzheimer’s</a></li>
+            <li><a class="dropdown-item" href="exercisepar.html">Parkinson’s</a></li>
+            <li><a class="dropdown-item" href="exercisethy.html">Thyroid</a></li>
+            <li><a class="dropdown-item" href="exercisehep.html">Hepatitis C</a></li>
+            <li><a class="dropdown-item" href="exerciseliv.html">Liver Disease</a></li>
+            <li><a class="dropdown-item" href="exercisechol.html">Cholesterol</a></li>
+            <li><a class="dropdown-item" href="exercisebp.html">Blood Pressure</a></li>
+          </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="connect.html">Connect</a>
+        </li>
+        <!--<li class="nav-item">
+          <a class="nav-link" href="community.html">Community</a>
+        </li>-->
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--_*********************************************************************************************************************************-->
+
+  <!-- ************************************************************************************************** -->
+
+  <br>
+
+  <h1> <u>Yoga for Uterus</u></h1>
+  <br>
+
+  <h2>1.Baddha Konasana (Bound Angle Pose)</h2>
+  <center><img class="im"  src="static/images/bk.jpg" alt="aa1"></center>
+  <ul class="lili">
+    <li>Sit on the floor with legs stretched out.</li>
+    <li>Bend the knees and bring the feet together.</li>
+    <li>Hold the ankles with the hands and pull it towards the groins.</li>
+    <li>Wrap your interlaced fingers around the feet and hold it.</li>
+    <li>Pull the feet towards you as much as possible. Do not strain. Try to keep the knees as close to the ground as possible, but do not force it.</li>
+    <li>Keep the chest open and the back straight. Relax the arms and shoulders and gaze straight ahead. Breathe slowly and steadily with awareness.</li>
+    <li>Hold the position for as long as you are comfortable.</li>
+    <li>To release the position, free the hands and stretch the legs in front of you. Gently massage the thighs and groin muscles if there is any pain and if needed, lie in Shavasana as a relaxation pose.</li>
+    <li>The knees can also be moved up and down in the final position, also popularly known as the butterfly pose and is used to loosen the groin and hip muscles.</li>
+  </ul>
+
+  <h2>2.Bhujangasana (Cobra pose):</h2>
+  <center><img class="im" src="static/images/ak1.gif" alt="aa1"></center>
+  <ul class="lili">
+    <li>Lie down on your stomach.</li>
+    <li>Raise your trunk and head supported by the palms.</li>
+    <li>Bend your arms at the elbows.</li>
+    <li>Arch your neck and look upward gently.</li>
+    <li>Make sure that your stomach is pressed on the floor.</li>
+    <li>Put pressure on your toes by pressing them onto the floor. (Extend them out to fully experience the cobra).</li>
+    <li>Hold the asana for 5 seconds.</li>
+  </ul>
+
+  <h2>3.Halasana (Plow pose)</h2>
+  <center><img class="im"  src="static/images/aab6.gif" alt="aa1"></center>
+  <ul class="lili">
+    <li>From shoulderstand, bring your feet to the floor above your head.</li>
+    <li>If your feet don’t reach the floor, use a pillow or block for support.</li>
+    <li>Keep your hands on your lower back for added support.</li>
+    <li>Remain in the pose for 1 to 5 minutes.</li>
+    <li>To release, roll your spine back down to your mat and raise your legs up to form a 90-degree angle.</li>
+    <li>Lower your legs back down to your mat.</li>
+  </ul>
+
+  <h2>4.Balasana (Child's pose)</h2>
+  <center><img class="im"  src="static/images/aab8.gif" alt="aa1"></center>
+  <ul class="lili">
+    <li>While in a kneeling position, make sure your knees are hip-width apart.</li>
+    <li>Sink back to bring your buttocks to your heels.</li>
+    <li>You may place a cushion between your thighs and calves for support.</li>
+    <li>Lean forward to rest your forehead on the floor.</li>
+    <li>Extend your arms in front of you, or allow your arms to rest alongside your body with your palms facing up.</li>
+    <li>Remain in this pose for up to 5 minutes.</li>
+    <li>Release by lifting yourself up into a seated position.</li>
+  </ul>
+
+  <h2>5.Setu Bandhasana (Bridge pose)</h2>
+  <center><img class="im" src="static/images/aah5.gif" alt="aa1"></center>
+    <ul class="lili">
+      <li>Lie down on your back, bend your knees and place your feet firmly on the mat.</li>
+      <li>Bring your heels as close to the hips as possible.</li>
+      <li>Place your arms by your sides, palms facing down. Now, try to touch your heels with the tips of your fingers.</li>
+      <li>As you raise your hips and back off the mat, try to bring your breast bone closer to your face. Keep your head and shoulders firmly on the mat.</li>
+      <li>If you want to support your back, bend your arms and place your hands on your back - just above the hips.</li>
+      <li>Hold this pose for at least 30 seconds.</li>
+      <li>Gently return to the starting position. Rest for a few seconds.</li>
+      <li>Repeat once or twice.</li>
+    </ul>
+
+    <h2>6.Supta Baddha Konasana (Reclining Bound Angle Pose)</h2>
+    <center><img class="im"  src="static/images/aab2.gif" alt="aa1"></center>
+    <ul class="lili">
+      <li>While seated, bring the soles of your feet together. Your knees should be out to the sides.</li>
+      <li>You may place a bolster underneath your knees for support.</li>
+      <li>Slowly lean back until your back is flat on the floor.</li>
+      <li>Relax the area around your hips.</li>
+      <li>Rest your hands alongside your body with your palms facing up.</li>
+      <li>You can also press down on your thighs to gently deepen the stretch in your legs and hips.</li>
+      <li>Stay in this pose for up to 10 minutes.</li>
+      <li>To release, use your hands to lift and press your knees together. Slowly sit all the way up.</li>
+    </ul>
+
+    <h2>7.Malasana (Garland Pose)</h2>
+    <center><img class="im"  src="static/images/malasana.png" alt="aa1"></center>
+    <ul class="lili">
+      <li>First, you need to stand in Mountain pose (Tadasana) at the top of your mat.</li>
+      <li>Keep both your legs far apart, there should be a distance of 2 to 2.5 feet between the both legs.</li>
+      <li>Now Bending your elbows and bring your palm together in Anjali pose(prayer position) make sure hands near the chest.</li>
+      <li>Now, while bending your knees, sit slowly towards the bottom, in this posture you will come to a bowel movemen</li>
+      <li>n this position lower your hips towards the ground and sit on your soles of the feet. Keep your thighs wider than the upper part of the torso.</li>
+      <li>Make sure that your hips remain very close to the ankles and pull your shoulder back.</li>
+      <li>Exhale and bend forward as if your torso is stuck between your thighs. Combine both hands in such a position that a 90-degree angle is formed at the elbow.</li>
+      <li>Then keep the elbows of both hands inside the thighs, doing this will help you to expand the front part of your torso.</li>
+      <li>Stay in this posture for at least one minute.</li>
+      <li>Stand to get into your initial state, bring your hands straight down.</li>
+    </ul>
+
+    <h2>8.Janu Sirsasana (Head-to-Knee Forward Bend)</h2>
+    <center><img class="im"  src="static/images/jss.gif" alt="aa1"></center>
+    <ul class="lili">
+      <li>Sit straight with the legs stretched out in front of the body, keeping the feet together.</li>
+      <li>Bend the left knee and bring the left heel close to your groin as much as you can comfortably. Place the sole of the left foot to the inside of right leg’s inner thigh.</li>
+      <li>Keep the left knee on the floor. Place the palm of your hands on the top of the right knee.</li>
+      <li>Inhale and using your pelvic muscles, slowly bend the torso in the forward direction sliding your hands towards the right foot.</li>
+      <li>Try to get a hold of right foot if possible, else keep your hands as far as you can comfortably. Ideally, hands are locked behind the sole of the right foot, grabbing the left wrist with a right hand. It takes time to be able to bend to that extent.</li>
+      <li>Move your head towards your right leg, if possible touch your knee with your forehead.</li>
+      <li>Keep the back relaxed and don’t overstretch the body.</li>
+      <li>Retain the final position for a few seconds or as long as you feel comfortable, breathing normally.</li>
+      <li>To return, inhale and lift the head, release the hands and bring them back in upright position.</li>
+      <li>Take 3 long and deep breaths. Practice again by interchanging the position of the legs.</li>
+    </ul>
+
+
+
+<!-- *****************************************************************************************************************-->
+
+<div class="footer">
+
+  <footer class="text-center py-5">
+
+    <div class="container c6 py-md-3">
+
+      <p><a class="MEDP" href="#">M E D P A L</a></p>
+      <p>Made with love by Vaishnavi & Vyjayanthi</p>
+      <p>© Copyright 2022</p>
+      <p>✉vaishnaviseshadri02@gmail.com</p>
+      <p>✉vyjayanthiseshadri02@gmail.com</p>
+
+    </div>
+  </footer>
+</div>
+
+<!-- *****************************************************************************************************************-->

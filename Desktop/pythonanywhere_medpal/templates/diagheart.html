@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>M E D P A L</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/css/diag.css">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+
+</head>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+
+
+<nav class="navbar navbar-expand-lg">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">M E D P A L</a>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Diagnosis
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <li><a class="dropdown-item" href="diagheart.html">Heart</a></li>
+          <li><a class="dropdown-item" href="diagdiab.html">Diabetes</a></li>
+          <li><a class="dropdown-item" href="diagheart.html">Breast Cancer</a></li>
+          <li><a class="dropdown-item" href="diagdiab.html">Lung Cancer</a></li>
+          <li><a class="dropdown-item" href="diagkidney.html">Kidney Disease</a></li>
+          <!--<li><a class="dropdown-item" href="diagpm.html">Pneumonia</a></li>
+          <li><a class="dropdown-item" href="diagal.html">Alzheimer’s</a></li>-->
+          <li><a class="dropdown-item" href="diagthy.html">Thyroid</a></li>
+          <!--<li><a class="dropdown-item" href="diagliv.html">Liver Disease</a></li>-->
+        </ul>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Diet
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <li><a class="dropdown-item" href="dietheart.html">Heart</a></li>
+          <li><a class="dropdown-item" href="dietdiab.html">Diabetes</a></li>
+          <li><a class="dropdown-item" href="dietbreast.html">Cancer</a></li>
+          <li><a class="dropdown-item" href="dietkidney.html">Kidney Disease</a></li>
+          <li><a class="dropdown-item" href="dietpn.html">Pneumonia</a></li>
+          <li><a class="dropdown-item" href="dietal.html">Alzheimer’s</a></li>
+          <li><a class="dropdown-item" href="dietthy.html">Thyroid</a></li>
+          <li><a class="dropdown-item" href="diethep.html">Hepatitis C</a></li>
+          <li><a class="dropdown-item" href="dietliver.html">Liver Disease</a></li>
+          <li><a class="dropdown-item" href="dietcholesterol.html">Cholesterol</a></li>
+          <li><a class="dropdown-item" href="dietbp.html">Blood Pressure</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Exercise
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <li><a class="dropdown-item" href="exercisehead.html">Migraine</a></li>
+          <li><a class="dropdown-item" href="exerciseuter.html">Uterus</a></li>
+          <li><a class="dropdown-item" href="exerciseheart.html">Heart</a></li>
+          <li><a class="dropdown-item" href="exercisediab.html">Diabetes</a></li>
+          <li><a class="dropdown-item" href="exerciseuter.html">Breast Cancer</a></li>
+          <li><a class="dropdown-item" href="exerciseheart.html">Lung Cancer</a></li>
+          <li><a class="dropdown-item" href="exercisediab.html">Brain Tumor</a></li>
+          <li><a class="dropdown-item" href="exercisekidney.html">Kidney Disease</a></li>
+          <li><a class="dropdown-item" href="exercisepm.html">Pneumonia</a></li>
+          <li><a class="dropdown-item" href="exerciseal.html">Alzheimer’s</a></li>
+          <li><a class="dropdown-item" href="exercisepar.html">Parkinson’s</a></li>
+          <li><a class="dropdown-item" href="exercisethy.html">Thyroid</a></li>
+          <li><a class="dropdown-item" href="exercisehep.html">Hepatitis C</a></li>
+          <li><a class="dropdown-item" href="exerciseliv.html">Liver Disease</a></li>
+          <li><a class="dropdown-item" href="exercisechol.html">Cholesterol</a></li>
+          <li><a class="dropdown-item" href="exercisebp.html">Blood Pressure</a></li>
+        </ul>
+      <li class="nav-item">
+        <a class="nav-link" href="connect.html">Connect</a>
+      </li>
+      <!--<li class="nav-item">
+        <a class="nav-link" href="community.html">Community</a>
+      </li>-->
+      </li>
+    </ul>
+  </div>
+</nav>
+<!--_*********************************************************************************************************************************-->
+
+
+<!--<script type="text/javascript" src="static/js/dg.js"></script>
+</head>
+<script language="Javascript">
+  function validate() {
+    var allok = true;
+    if (Heart_Disease_Prediction.Age__1.value == "") {
+      alert('Invalid input for Age, this must be a number')
+      return false;
+    }
+    if (Heart_Disease_Prediction.Blood_Pressure_In_mmHg__4.value == "") {
+      alert('Invalid input for Blood Pressure In mmHg, this must be a number')
+      return false;
+    }
+    if (Heart_Disease_Prediction.Cholesterol_In_mgdl__5.value == "") {
+      alert('Invalid input for Cholesterol In mg/dl, this must be a number')
+      return false;
+    }
+    if (Heart_Disease_Prediction.Maximum_Heart_Rate__8.value == "") {
+      alert('Invalid input for Maximum Heart Rate, this must be a number')
+      return false;
+    }
+    if (Heart_Disease_Prediction.Exercise_Induced_Angina__9.selectedIndex == 0) {
+      alert('Invalid input for Exercise Induced Angina');
+      return false;
+    }
+    if (Heart_Disease_Prediction.Old_Peak__10.value == "") {
+      alert('Invalid input for Old Peak');
+      return false;
+    }
+    document.Heart_Disease_Prediction.heartpredict.disabled = "disabled";
+    return true;
+  }
+</script>-->
+
+<!--_*********************************************************************************************************************************-->
+
+<body>
+  <center>
+    <h1>Heart Diagnosis</h1>
+  </center>
+  <br>
+
+
+  <!--  <form name="Heart_Disease_Prediction" method="post" action="{{url_for('heartpredict')}}" onsubmit="return validate();">
+      <table class="tb" width="100%" border="0" cellpadding="5" cellspacing="0">
+        <tr>
+          <td>Age</td>
+          <td><input class="element text small" id='Age__1' name="Age__1"> </td>
+        </tr>
+        <tr>
+          <td>Gender</td>
+          <td><select class="element select medium" name="Gender__2">
+              <option value="1">Male</option>
+              <option value="0">Female</option>
+            </select></td>
+        </tr>
+
+        <tr>
+          <td>Chest Pain Type</td>
+          <td><select class="element select medium" name="Chest_Pain_Type__3">
+              <option value="3" selected>Typical Angina</option>
+              <option value="1">Atypical Angina</option>
+              <option value="2">Non-Angina Pain</option>
+              <option value="0">Asymptomatic</option>
+            </select></td>
+        </tr>
+        <tr>
+          <td>Blood Pressure (In mmHg)</td>
+          <td><input type="edit" class="element text small" id="Blood_Pressure_In_mmHg__4" name="Blood_Pressure_In_mmHg__4" value="" size="10"> [Range: 60-200]</td>
+        </tr>
+        <tr>
+          <td>Cholesterol (In mg/dl)</td>
+          <td><input type="edit" class="element text small" id="Cholesterol_In_mgdl__5" name="Cholesterol_In_mgdl__5" value="" size="10"> [Range: 120-600]</td>
+        </tr>
+        <tr>
+          <td>Fasting Blood Sugar</td>
+          <td><select class="element select medium" name="Fasting_Blood_Sugar__6">
+              <option value="1" selected>>120 mg/dl</option>
+              <option value="0">
+                <=120 mg/dl</option>
+            </select></td>
+        </tr>
+        <tr>
+          <td>Resting ECG</td>
+          <td><select class="element select medium" name="Resting_ECG__7">
+              <option value="0" selected>LVH:High risk</option>
+              <option value="1" selected>Normal</option>
+              <option value="2">Abnormal</option>
+            </select></td>
+        </tr>
+        <tr>
+          <td>Maximum Heart Rate</td>
+          <td><input type="edit" class="element text small" class="element select medium" name="Maximum_Heart_Rate__8" value="" size="10"> [Range: 60-200]</td>
+        </tr>
+        <tr>
+          <td>Exercise Induced Angina</td>
+          <td><select class="element select medium" name="Exercise_Induced_Angina__9">
+              <option value="NA" selected>Please select</option>
+              <option value="1">Yes</option>
+              <option value="0">No</option>
+            </select></td>
+        </tr>
+        <tr>
+          <td>Old Peak</td>
+          <td><input type="edit" name="Old_Peak__10" id="Old_Peak__10" class="element text small" value="" size="10"> [Range: 0-6]</td>
+        </tr>
+        <tr>
+          <td>Slope</td>
+          <td><select class="element select medium" name="Slope__11">
+              <option value="2" selected>Upsloping</option>
+              <option value="1">Flat</option>
+              <option value="0">Downsloping</option>
+            </select></td>
+        </tr>
+        <tr>
+          <td>Number of Vessels Colored</td>
+          <td><select class="element select medium" name="Number_of_Vessels_Colored__12">
+              <option value="0" selected>0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select></td>
+        </tr>
+        <tr>
+          <td>Thal</td>
+          <td><select class="element select medium" name="Thal__13">
+              <option value="0">Null</option>
+              <option value="2">Normal</option>
+              <option value="1">Fixed Defect</option>
+              <option value="3">Reversible Defect</option>
+            </select></td>
+        </tr>
+        <tr>
+          <td class="bt" align="center">
+            <input type="reset" name="Reset" class="btn1" value="Reset">
+          </td>
+          <td class="bt" align="center">
+            <button type="submit" class="btn">Predict</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+    <br><br>
+  </div>
+</body>
+<br><br>-->
+
+  <!--_______________________________________________________________________________________________________________-->
+  <div style="
+    width: 500px;
+    height: 50rem;
+    margin: 0px auto;
+    padding: 10px 20px;
+  ">
+    <section class="info">
+      <form name="Heart_Disease_Prediction" method="post" action="{{url_for('heartpredict')}}">
+        <div>
+          <ul class="bullet">
+            <li><label class="gfield_label">Enter your Age</label>
+              <div><input name="Age__1" id="Age__1" type="text" class="medium" required minlength="1" maxlength="50" placeholder="Example: 40" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Gender</label>
+              <div include="form-input-select()">
+                <select  name="Gender__2"required>
+                  <option value="">Please Select</option>
+                  <option value="1">Male</option>
+                  <option value="0">Female</option>
+                </select>
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Chest Pain Type</label>
+              <div include="form-input-select()">
+                <select name="Chest_Pain_Type__3" required>
+                  <option value="">Please Select</option>
+                  <option value="3">Typical Angina</option>
+                  <option value="1">Atypical Angina</option>
+                  <option value="2">Non-Angina Pain</option>
+                  <option value="0">Asymptomatic</option>
+                </select>
+              </div>
+            </li>
+
+            <li><label class="gfield_label">Blood Pressure (In mmHg)</label>
+              <div><input name="Blood_Pressure_In_mmHg__4" id="Blood_Pressure_In_mmHg__4" type="text" class="medium" required minlength="1" maxlength="50" placeholder="[Range: 60-200]" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Cholesterol (In mg/dl)</label>
+              <div><input name="Cholesterol_In_mgdl__5" id="Cholesterol_In_mgdl__5" type="text" class="medium" required minlength="1" maxlength="50" placeholder="[Range: 120-600]" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Fasting Blood Sugar</label>
+              <div include="form-input-select()" >
+                <select name="Fasting_Blood_Sugar__6" required>
+                  <option value="">Please Select</option>
+                  <option value="1">>120 mg/dl</option>
+                  <option value="0"><=120 mg/dl</option>
+                </select>
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Resting ECG</label>
+              <div include="form-input-select()">
+                <select name="Resting_ECG__7" required>
+                  <option value="">Please Select</option>
+                  <option value="0">LVH:High risk</option>
+                  <option value="1">Normal</option>
+                  <option value="2">Abnormal</option>
+                </select>
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Maximum Heart Rate</label>
+              <div>
+                <input name="Maximum_Heart_Rate__8" id="Maximum_Heart_Rate__8" type="text" class="medium" required minlength="1" maxlength="50" placeholder="[Range: 60-200]" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Exercise Induced Angina</label>
+              <div include="form-input-select()">
+                <select name="Exercise_Induced_Angina__9" required>
+                  <option value="">Please Select</option>
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
+                </select>
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Old Peak</label>
+              <div>
+                <input name="Old_Peak__10" id="Old_Peak__10" type="text" class="medium" required minlength="1" maxlength="50" placeholder="[Range: 0-6]" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Slope</label>
+              <div include="form-input-select()" >
+                <select name="Slope__11" required>
+                  <option value="">Please Select</option>
+                  <option value="2">Upsloping</option>
+                  <option value="1">Flat</option>
+                  <option value="0">Downsloping</option>
+                </select>
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Number of Vessels Colored</label>
+              <div include="form-input-select()" >
+                <select name="Number_of_Vessels_Colored__12" required>
+                  <option value="">Please Select</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Thal</label>
+              <div include="form-input-select()">
+                <select  name="Thal__13" required>
+                  <option value="">Please Select</option>
+                  <option value="0">Null</option>
+                  <option value="2">Normal</option>
+                  <option value="1">Fixed Defect</option>
+                  <option value="3">Reversible Defect</option>
+                </select>
+              </div>
+            </li>
+            <br><br>
+          </ul>
+        </div>
+        <div class="sub" align="center">
+          <input type="submit" value="Predict">
+        </div>
+      </form>
+    </section>
+  </div>
+
+
+
+
+  <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <!--    <div style="
+    width: 350px;
+    height: 50rem;
+    margin: 0px auto;
+    color: black;
+    border-radius: 25px;
+    padding: 10px 10px;
+  ">
+      <form method="POST" action="{{url_for('heartpredict')}}">
+        <div class="form-group">
+          <label for="Nitrogen" style="font-size: 17px"><b>Nitrogen</b></label>
+          <input type="number" class="form-control" id="Nitrogen" name="nitrogen" placeholder="Enter the value (example:50)" style="font-weight: bold" required="">
+        </div>
+        <div class="form-group">
+          <label for="Phosphorous" style="font-size: 17px"><b>Phosphorous</b></label>
+          <input type="number" class="form-control" id="Phosphorous" name="phosphorous" placeholder="Enter the value (example:50)" style="font-weight: bold" required="">
+        </div>
+
+        <div class="form-group">
+          <label for="Pottasium" style="font-size: 17px"><b>Pottasium</b></label>
+          <input type="number" class="form-control" id="Pottasium" name="pottasium" placeholder="Enter the value (example:50)" style="font-weight: bold" required="">
+        </div>
+        <div class="form-group">
+          <label for="ph" style="font-size: 17px"><b>ph level</b></label>
+          <input type="number" step="0.01" class="form-control" id="ph" name="ph" placeholder="Enter the value" style="font-weight: bold" required="">
+        </div>
+        <div class="form-group">
+          <label for="Rainfall" style="font-size: 17px"><b>Rainfall (in mm)</b></label>
+          <input type="number" step="0.01" class="form-control" id="Rainfall" name="rainfall" placeholder="Enter the value" style="font-weight: bold" required="">
+        </div>
+        <div class="form-group">
+          <label for="State" style="font-size: 17px"><b>State</b></label>
+          <select onchange="print_city('state', this.selectedIndex);" id="sts" name="stt" class="form-control" style="font-weight: bold; color: black" required="">
+            <option value="">Select State</option>
+            <option value="Andaman &amp; Nicobar">Andaman &amp; Nicobar</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Dadra &amp; Nagar Haveli">Dadra &amp; Nagar Haveli</option>
+            <option value="Daman &amp; Diu">Daman &amp; Diu</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jammu &amp; Kashmir">Jammu &amp; Kashmir</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Lakshadweep">Lakshadweep</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Orissa">Orissa</option>
+            <option value="Pondicherry">Pondicherry</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttaranchal">Uttaranchal</option>
+            <option value="West Bengal">West Bengal</option>
+          </select>
+          <br>
+
+          <script language="javascript">
+            print_state("sts");
+          </script>
+        </div>
+        <br><br><br>
+
+        <div class="d-flex justify-content-center">
+          <button type="submit" class="btn btn-info" style="
+          color: black;
+          font-weight: bold;
+          width: 130px;
+          height: 50px;
+          border-radius: 12px;
+          font-size: 21px;
+        ">
+
+            Predict
+          </button>
+        </div>
+      </form>
+    </div>-->

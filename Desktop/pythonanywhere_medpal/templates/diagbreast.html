@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>M E D P A L</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/css/diag.css">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+
+</head>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+
+<nav class="navbar navbar-expand-lg">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">M E D P A L</a>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Diagnosis
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <li><a class="dropdown-item" href="diagheart.html">Heart</a></li>
+          <li><a class="dropdown-item" href="diagdiab.html">Diabetes</a></li>
+          <li><a class="dropdown-item" href="diagheart.html">Breast Cancer</a></li>
+          <li><a class="dropdown-item" href="diagdiab.html">Lung Cancer</a></li>
+          <li><a class="dropdown-item" href="diagkidney.html">Kidney Disease</a></li>
+          <!--<li><a class="dropdown-item" href="diagpm.html">Pneumonia</a></li>
+          <li><a class="dropdown-item" href="diagal.html">Alzheimer’s</a></li>-->
+          <li><a class="dropdown-item" href="diagthy.html">Thyroid</a></li>
+          <!--<li><a class="dropdown-item" href="diagliv.html">Liver Disease</a></li>-->
+        </ul>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Diet
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <li><a class="dropdown-item" href="dietheart.html">Heart</a></li>
+          <li><a class="dropdown-item" href="dietdiab.html">Diabetes</a></li>
+          <li><a class="dropdown-item" href="dietbreast.html">Cancer</a></li>
+          <li><a class="dropdown-item" href="dietkidney.html">Kidney Disease</a></li>
+          <li><a class="dropdown-item" href="dietpn.html">Pneumonia</a></li>
+          <li><a class="dropdown-item" href="dietal.html">Alzheimer’s</a></li>
+          <li><a class="dropdown-item" href="dietthy.html">Thyroid</a></li>
+          <li><a class="dropdown-item" href="diethep.html">Hepatitis C</a></li>
+          <li><a class="dropdown-item" href="dietliver.html">Liver Disease</a></li>
+          <li><a class="dropdown-item" href="dietcholesterol.html">Cholesterol</a></li>
+          <li><a class="dropdown-item" href="dietbp.html">Blood Pressure</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Exercise
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <li><a class="dropdown-item" href="exercisehead.html">Migraine</a></li>
+          <li><a class="dropdown-item" href="exerciseuter.html">Uterus</a></li>
+          <li><a class="dropdown-item" href="exerciseheart.html">Heart</a></li>
+          <li><a class="dropdown-item" href="exercisediab.html">Diabetes</a></li>
+          <li><a class="dropdown-item" href="exerciseuter.html">Breast Cancer</a></li>
+          <li><a class="dropdown-item" href="exerciseheart.html">Lung Cancer</a></li>
+          <li><a class="dropdown-item" href="exercisediab.html">Brain Tumor</a></li>
+          <li><a class="dropdown-item" href="exercisekidney.html">Kidney Disease</a></li>
+          <li><a class="dropdown-item" href="exercisepm.html">Pneumonia</a></li>
+          <li><a class="dropdown-item" href="exerciseal.html">Alzheimer’s</a></li>
+          <li><a class="dropdown-item" href="exercisepar.html">Parkinson’s</a></li>
+          <li><a class="dropdown-item" href="exercisethy.html">Thyroid</a></li>
+          <li><a class="dropdown-item" href="exercisehep.html">Hepatitis C</a></li>
+          <li><a class="dropdown-item" href="exerciseliv.html">Liver Disease</a></li>
+          <li><a class="dropdown-item" href="exercisechol.html">Cholesterol</a></li>
+          <li><a class="dropdown-item" href="exercisebp.html">Blood Pressure</a></li>
+        </ul>
+      <li class="nav-item">
+        <a class="nav-link" href="connect.html">Connect</a>
+      </li>
+      <!--<li class="nav-item">
+        <a class="nav-link" href="community.html">Community</a>
+      </li>-->
+      </li>
+    </ul>
+  </div>
+</nav>
+<!--_*********************************************************************************************************************************-->
+
+
+
+
+<!--_*********************************************************************************************************************************-->
+
+
+<!--_*********************************************************************************************************************************-->
+
+<body>
+
+  <center>
+    <h1>Breast Cancer Diagnosis</h1>
+  </center>
+  <br>
+
+
+  <div style="
+        width: 500px;
+        height: 50rem;
+        margin: 0px auto;
+        padding: 10px 20px;
+        ">
+    <section class="info">
+      <form name="BreastCancer_Disease_Prediction" method="post" action="{{url_for('predictbr')}}">
+        <div>
+          <ul class="bullet">
+            <li><label class="gfield_label">Radius mean</label>
+              <div><input name="rm" id="rm" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Texture mean</label>
+              <div><input name="tm" id="tm" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Perimeter mean</label>
+              <div><input name="pm" id="pm" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Area mean</label>
+              <div><input name="am" id="am" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Smoothness mean	</label>
+              <div><input name="sm" id="sm" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Compactness mean</label>
+              <div><input name="cm" id="cm" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Concavity mean</label>
+              <div><input name="ccm" id="ccm" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Concave points mean	</label>
+              <div><input name="cpm" id="cpm" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Symmetry mean</label>
+              <div><input name="smm" id="smm" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Fractal dimension mean	</label>
+              <div><input name="fdm" id="fdm" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Radius se</label>
+              <div><input name="rs" id="rs" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+
+            <li><label class="gfield_label">Texture se</label>
+              <div><input name="ts" id="ts" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Perimeter se</label>
+              <div><input name="ps" id="ps" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Area se</label>
+              <div><input name="ase" id="ase" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Smoothness se</label>
+              <div><input name="sse" id="sse" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Compactness se</label>
+              <div><input name="cse" id="cse" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Concavity se</label>
+              <div><input name="ccse" id="ccse" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Concave points se	</label>
+              <div><input name="cpse" id="cpse" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Symmetry se</label>
+              <div><input name="ssse" id="ssse" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Fractal dimension se	</label>
+              <div><input name="fdse" id="fdse" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Radius worst	</label>
+              <div><input name="rwse" id="rwse" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Texture worst</label>
+              <div><input name="tw" id="tw" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Perimeter worst</label>
+              <div><input name="pw" id="pw" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Area worst</label>
+              <div><input name="aw" id="aw" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Smoothness worst</label>
+              <div><input name="sw" id="sw" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Compactness worst</label>
+              <div><input name="cw" id="cw" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Concavity worst</label>
+              <div><input name="ccw" id="ccw" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Concave points worst	</label>
+              <div><input name="cpw" id="cpw" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Symmetry worst</label>
+              <div><input name="swsw" id="swsw" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <li><label class="gfield_label">Fractal dimension worst	</label>
+              <div><input name="fdw" id="fdw" type="text" class="medium" required minlength="1" maxlength="50" autocomplete="off">
+              </div>
+              <br>
+            </li>
+
+            <br><br>
+          </ul>
+        </div>
+        <div class="sub" align="center">
+          <input type="submit" value="Predict">
+        </div>
+      </form>
+    </section>
+  </div>
+
+
+
+  <!--
+  <div id="form_container">
+
+
+    <form name="BreastCancer_Disease_Prediction" method="Post" action="{{url_for('predictbr')}}" onSubmit="return validate();">
+      <table class="tb" width="100%" border="0" cellpadding="5" cellspacing="0">
+        <tr>
+          <td>Radius_mean</td>
+          <td><input class="element text small" id='rm' name="rm"> </td>
+        </tr>
+        <tr>
+          <td>Texture_mean</td>
+          <td><input class="element text small" id='tm' name="tm"> </td>
+        </tr>
+
+        <tr>
+          <td>Perimeter_mean</td>
+          <td><input type="edit" class="element text small" id="pm" name="pm" value="" size="10"></td>
+        </tr>
+
+        <tr>
+          <td>Area_mean</td>
+          <td><input type="edit" class="element text small" id="am" name="am" value="" size="10"> </td>
+        </tr>
+
+        <tr>
+          <td>Smoothness_mean</td>
+          <td><input type="edit" class="element text small" id="sm" name="sm" value="" size="10"> </td>
+        </tr>
+        <tr>
+
+        <tr>
+          <td>Compactness_mean</td>
+          <td><input type="edit" class="element text small" id="cm" name="cm" value="" size="10"> </td>
+        </tr>
+
+        <tr>
+          <td>Concavity_mean</td>
+          <td><input type="edit" class="element text small" id="ccm" name="ccm" value="" size="10"> </td>
+        </tr>
+
+        <tr>
+          <td>Concave points_mean</td>
+          <td><input type="edit" class="element text small" id="ccmm" name="ccmm" value="" size="10"> </td>
+        </tr>
+
+        <tr>
+          <td>Symmetry_mean</td>
+          <td><input type="edit" class="element text small" id="sym" name="sym" value="" size="10"> </td>
+        </tr>
+
+        <tr>
+          <td>Fractal dimension_mean</td>
+          <td><input type="edit" class="element text small" id="fm" name="fm" value="" size="10"></td>
+        </tr>
+
+
+        <tr>
+          <td>Radius_se</td>
+          <td><input class="element text small" id='rs' name="rs"> </td>
+        </tr>
+        <tr>
+          <td>Texture_se</td>
+          <td><input class="element text small" id='ts' name="ts"> </td>
+        </tr>
+
+        <tr>
+          <td>Perimeter_se</td>
+          <td><input type="edit" class="element text small" id="ps" name="ps" value="" size="10"></td>
+        </tr>
+
+        <tr>
+          <td>Area_se</td>
+          <td><input type="edit" class="element text small" id="as" name="as" value="" size="10"> </td>
+        </tr>
+
+        <tr>
+          <td>Smoothness_se</td>
+          <td><input type="edit" class="element text small" id="ss" name="ss" value="" size="10"> </td>
+        </tr>
+        <tr>
+
+        <tr>
+          <td>Compactness_se</td>
+          <td><input type="edit" class="element text small" id="cs" name="cs" value="" size="10"> </td>
+        </tr>
+
+        <tr>
+          <td>Concavity_se</td>
+          <td><input type="edit" class="element text small" id="ccs" name="ccs" value="" size="10"> </td>
+        </tr>
+
+        <tr>
+          <td>Concave points_se</td>
+          <td><input type="edit" class="element text small" id="ccss" name="ccss" value="" size="10"> </td>
+        </tr>
+
+        <tr>
+          <td>Symmetry_se</td>
+          <td><input type="edit" class="element text small" id="sys" name="sys" value="" size="10"> </td>
+        </tr>
+
+        <tr>
+          <td>Fractal dimension_se</td>
+          <td><input type="edit" class="element text small" id="fs" name="fs" value="" size="10"></td>
+        </tr>
+
+        <tr>
+          <td>Radius_worst</td>
+          <td><input class="element text small" id='rw' name="rw"> </td>
+        </tr>
+        <tr>
+          <td>Texture_worst</td>
+          <td><input class="element text small" id='tw' name="tw"> </td>
+        </tr>
+
+        <tr>
+          <td>Perimeter_worst</td>
+          <td><input type="edit" class="element text small" id="pw" name="pw" value="" size="10"></td>
+        </tr>
+
+        <tr>
+          <td>Area_worst</td>
+          <td><input type="edit" class="element text small" id="aw" name="aw" value="" size="10"> </td>
+        </tr>
+
+        <tr>
+          <td>Smoothness_worst</td>
+          <td><input type="edit" class="element text small" id="sw" name="sw" value="" size="10"> </td>
+        </tr>
+        <tr>
+
+        <tr>
+          <td>Compactness_worst</td>
+          <td><input type="edit" class="element text small" id="cw" name="cw" value="" size="10"> </td>
+        </tr>
+
+        <tr>
+          <td>Concavity_worst</td>
+          <td><input type="edit" class="element text small" id="ccw" name="ccw" value="" size="10"> </td>
+        </tr>
+
+        <tr>
+          <td>Concave points_worst</td>
+          <td><input type="edit" class="element text small" id="ccww" name="Cholesterol_In_mgdl__5" value="" size="10"> </td>
+        </tr>
+
+        <tr>
+          <td>Symmetry_worst</td>
+          <td><input type="edit" class="element text small" id="syw" name="syw" value="" size="10"> </td>
+        </tr>
+
+        <tr>
+          <td>Fractal dimension_worst</td>
+          <td><input type="edit" class="element text small" id="fw" name="fw" value="" size="10"></td>
+        </tr>
+        <tr>
+          <td class="bt" align="center">
+            <input type="reset" name="Reset" class="btn1" value="Reset">
+          </td>
+          <td class="bt" align="center">
+            <button type="submit" class="btn">Predict</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+    <br><br>
+    <h1>{{prediction_text}}</h1>
+
+  </div>-->
+  <br><br>
+
+
+
+</body>
+
+<!--_*********************************************************************************************************************************-->
